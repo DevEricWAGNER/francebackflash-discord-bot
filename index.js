@@ -402,5 +402,5 @@ Client.on("roleCreate", async role => {
 })
 
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬START BOT▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
-Client.login("OTAyMTk5OTcyNTg0Mzc0MzAz.YXa9Mw.LDE0WZVlt4Dbt3kZ6rkJFG53rpY");
+Client.login(process.env.TOKEN);
 console.log("ON");
