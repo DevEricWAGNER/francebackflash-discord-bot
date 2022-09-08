@@ -12,14 +12,9 @@ Client.config = configs;
 function activity() {
     setTimeout(() => {
         fivereborn.query(configs.serverInfo[0], configs.serverInfo[1], (err, data) => {
-            if (err) {
-                console.log(err);
-                Client.user.setActivity('Serveur OFF');
-            } else {
                 Client.user.setActivity(`Il y'a actuellement ${data.clients}/ ${data.maxclients} Joueurs en ligne`, {
                     type: configs.activityType
                 });
-            }
         });
         activity();
     }, 10000);
